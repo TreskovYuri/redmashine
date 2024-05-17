@@ -5,7 +5,7 @@ import Link from 'next/link'
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 
-const Schedule = () => {
+const Schedule = ({setModal}) => {
     const [page, setPage] = useState(false)
     const list =[
         <Image src={'assets/partners_logo1.svg'} unoptimized width={150} height={150} sizes='100' className='partners_logo'/>,
@@ -37,7 +37,7 @@ const Schedule = () => {
                     <div className={page ? `${"schedule_button"} ${"schedule_button_active"}` : "schedule_button"} onClick={() => setPage(true)}>19 мая</div>
                 </div>
                 {
-                    !page ? <Page1 /> : <Page2 />
+                    !page ? <Page1 setModal={setModal}/> : <Page2 setModal={setModal}/>
                 }
             </div>
         </div>
@@ -49,7 +49,7 @@ export default Schedule
 
 
 
-const Page1 = () => {
+const Page1 = ({setModal}) => {
     return (
         <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}  >
             <div className="schedule_card">
@@ -61,7 +61,7 @@ const Page1 = () => {
                     <span className="schedule_comand_name">Металлург</span>
                     <Image width={10} height={10} unoptimized src="assets/logo8.svg" alt="Логотип команды" className="schedule_logo" />
                 </div>
-                <Link href={'https://www.youtube.com/watch?v=xkgoERWc9Kw'}><Image width={10} height={10} unoptimized src="assets/translation.png" alt="Иконка трансляции" className="schedule_translation" /></Link>
+                <Image width={10} height={10} unoptimized src="assets/translation.png" alt="Иконка трансляции" className="schedule_translation" onClick={()=>setModal(true)}/>
             </div>
             <div className="schedule_card">
                 <div className="schedule_comands">
@@ -72,7 +72,7 @@ const Page1 = () => {
                     <span className="schedule_comand_name">АК БАРС</span>
                     <Image width={10} height={10} unoptimized src="assets/logo2.svg" alt="Логотип команды" className="schedule_logo" />
                 </div>
-                <Link href={'https://www.youtube.com/watch?v=xkgoERWc9Kw'}><Image width={10} height={10} unoptimized src="assets/translation.png" alt="Иконка трансляции" className="schedule_translation" /></Link>
+                <Image width={10} height={10} unoptimized src="assets/translation.png" alt="Иконка трансляции" className="schedule_translation" onClick={()=>setModal(true)}/>
             </div>
             <div className="schedule_card">
                 <div className="schedule_comands">
@@ -83,7 +83,7 @@ const Page1 = () => {
                     <span className="schedule_comand_name">АРМИЯ СКА</span>
                     <Image width={10} height={10} unoptimized src="assets/logo5.svg" alt="Логотип команды" className="schedule_logo" />
                 </div>
-                <Link href={'https://www.youtube.com/watch?v=xkgoERWc9Kw'}><Image width={10} height={10} unoptimized src="assets/translation.png" alt="Иконка трансляции" className="schedule_translation" /></Link>
+                <Image width={10} height={10} unoptimized src="assets/translation.png" alt="Иконка трансляции" className="schedule_translation" onClick={()=>setModal(true)}/>
             </div>
             <div className="schedule_card">
                 <div className="schedule_comands">
@@ -100,7 +100,7 @@ const Page1 = () => {
                     <span className="schedule_comand_name">Металлург</span>
                     <Image width={10} height={10} unoptimized src="assets/logo8.svg" alt="Логотип команды" className="schedule_logo" />
                 </div>
-                <Link href={'https://www.youtube.com/watch?v=xkgoERWc9Kw'}><Image width={10} height={10} unoptimized src="assets/translation.png" alt="Иконка трансляции" className="schedule_translation" /></Link>
+                <Image width={10} height={10} unoptimized src="assets/translation.png" alt="Иконка трансляции" className="schedule_translation" onClick={()=>setModal(true)}/>
             </div>
             <div className="schedule_card">
                 <div className="schedule_comands">
@@ -111,7 +111,7 @@ const Page1 = () => {
                     <span className="schedule_comand_name">динамо</span>
                     <Image width={10} height={10} unoptimized src="assets/logo4.svg" alt="Логотип команды" className="schedule_logo" />
                 </div>
-                <Link href={'https://www.youtube.com/watch?v=xkgoERWc9Kw'}><Image width={10} height={10} unoptimized src="assets/translation.png" alt="Иконка трансляции" className="schedule_translation" /></Link>
+                <Image width={10} height={10} unoptimized src="assets/translation.png" alt="Иконка трансляции" className="schedule_translation" onClick={()=>setModal(true)}/>
             </div>
             <div className="schedule_card">
                 <div className="schedule_comands">
@@ -122,7 +122,7 @@ const Page1 = () => {
                     <span className="schedule_comand_name">армия ска</span>
                     <Image width={10} height={10} unoptimized src="assets/logo5.svg" alt="Логотип команды" className="schedule_logo" />
                 </div>
-                <Link href={'https://www.youtube.com/watch?v=xkgoERWc9Kw'}><Image width={10} height={10} unoptimized src="assets/translation.png" alt="Иконка трансляции" className="schedule_translation" /></Link>
+                <Image width={10} height={10} unoptimized src="assets/translation.png" alt="Иконка трансляции" className="schedule_translation" onClick={()=>setModal(true)}/>
             </div>
             <div className="schedule_card">
                 <div className="schedule_comands">
@@ -133,7 +133,7 @@ const Page1 = () => {
                     <span className="schedule_comand_name">АК Барс</span>
                     <Image width={10} height={10} unoptimized src="assets/logo2.svg" alt="Логотип команды" className="schedule_logo" />
                 </div>
-                <Link href={'https://www.youtube.com/watch?v=xkgoERWc9Kw'}><Image width={10} height={10} unoptimized src="assets/translation.png" alt="Иконка трансляции" className="schedule_translation" /></Link>
+                <Image width={10} height={10} unoptimized src="assets/translation.png" alt="Иконка трансляции" className="schedule_translation" onClick={()=>setModal(true)}/>
             </div>
             <div className="schedule_card">
                 <div className="schedule_comands">
@@ -144,12 +144,12 @@ const Page1 = () => {
                     <span className="schedule_comand_name">Динамо</span>
                     <Image width={10} height={10} unoptimized src="assets/logo4.svg" alt="Логотип команды" className="schedule_logo" />
                 </div>
-                <Link href={'https://www.youtube.com/watch?v=xkgoERWc9Kw'}><Image width={10} height={10} unoptimized src="assets/translation.png" alt="Иконка трансляции" className="schedule_translation" /></Link>
+                <Image width={10} height={10} unoptimized src="assets/translation.png" alt="Иконка трансляции" className="schedule_translation" onClick={()=>setModal(true)}/>
             </div>
         </motion.div>
     )
 }
-const Page2 = () => {
+const Page2 = ({setModal}) => {
     return (
         <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}  >
             <div className="schedule_card">
@@ -161,7 +161,7 @@ const Page2 = () => {
                     <span className="schedule_comand_name">Ска стрельна</span>
                     <Image width={10} height={10} unoptimized src="assets/logo1.svg" alt="Логотип команды" className="schedule_logo" />
                 </div>
-                <Link href={'https://www.youtube.com/watch?v=xkgoERWc9Kw'}><Link href={'https://www.youtube.com/watch?v=xkgoERWc9Kw'}><Image width={10} height={10} unoptimized src="assets/translation.png" alt="Иконка трансляции" className="schedule_translation" /></Link></Link>
+                <Link href={'https://www.youtube.com/watch?v=xkgoERWc9Kw'}><Image width={10} height={10} unoptimized src="assets/translation.png" alt="Иконка трансляции" className="schedule_translation" onClick={()=>setModal(true)}/></Link>
             </div>
             <div className="schedule_card">
                 <div className="schedule_comands">
@@ -172,7 +172,7 @@ const Page2 = () => {
                     <span className="schedule_comand_name">Динамо</span>
                     <Image width={10} height={10} unoptimized src="assets/logo4.svg" alt="Логотип команды" className="schedule_logo" />
                 </div>
-                <Link href={'https://www.youtube.com/watch?v=xkgoERWc9Kw'}><Image width={10} height={10} unoptimized src="assets/translation.png" alt="Иконка трансляции" className="schedule_translation" /></Link>
+                <Image width={10} height={10} unoptimized src="assets/translation.png" alt="Иконка трансляции" className="schedule_translation" onClick={()=>setModal(true)}/>
             </div>
 
             <div className="schedule_card">
@@ -184,7 +184,7 @@ const Page2 = () => {
                     <span className="schedule_comand_name">Лада</span>
                     <Image width={10} height={10} unoptimized src="assets/logo7.svg" alt="Логотип команды" className="schedule_logo" style={{ width: "2vw" }} />
                 </div>
-                <Link href={'https://www.youtube.com/watch?v=xkgoERWc9Kw'}><Image width={10} height={10} unoptimized src="assets/translation.png" alt="Иконка трансляции" className="schedule_translation" /></Link>
+                <Image width={10} height={10} unoptimized src="assets/translation.png" alt="Иконка трансляции" className="schedule_translation" onClick={()=>setModal(true)}/>
             </div>
             <div className="schedule_card">
                 <div className="schedule_comands">
@@ -195,7 +195,7 @@ const Page2 = () => {
                     <span className="schedule_comand_name">Металлург</span>
                     <Image width={10} height={10} unoptimized src="assets/logo8.svg" alt="Логотип команды" className="schedule_logo" />
                 </div>
-                <Link href={'https://www.youtube.com/watch?v=xkgoERWc9Kw'}><Image width={10} height={10} unoptimized src="assets/translation.png" alt="Иконка трансляции" className="schedule_translation" /></Link>
+                <Image width={10} height={10} unoptimized src="assets/translation.png" alt="Иконка трансляции" className="schedule_translation" onClick={()=>setModal(true)}/>
             </div>
             <div className="schedule_card">
                 <div className="schedule_comands">
@@ -204,7 +204,7 @@ const Page2 = () => {
                     <span className="schedule_slesh">/</span>
                     <span className="schedule_comand_name">Группа 2 (4 место)</span>
                 </div>
-                <Link href={'https://www.youtube.com/watch?v=xkgoERWc9Kw'}><Image width={10} height={10} unoptimized src="assets/translation.png" alt="Иконка трансляции" className="schedule_translation" /></Link>
+                <Image width={10} height={10} unoptimized src="assets/translation.png" alt="Иконка трансляции" className="schedule_translation" onClick={()=>setModal(true)}/>
             </div>
             <div className="schedule_card">
                 <div className="schedule_comands">
@@ -213,21 +213,21 @@ const Page2 = () => {
                     <span className="schedule_slesh">/</span>
                     <span className="schedule_comand_name">Группа 2 (3 место)</span>
                 </div>
-                <Link href={'https://www.youtube.com/watch?v=xkgoERWc9Kw'}><Image width={10} height={10} unoptimized src="assets/translation.png" alt="Иконка трансляции" className="schedule_translation" /></Link>
+                <Image width={10} height={10} unoptimized src="assets/translation.png" alt="Иконка трансляции" className="schedule_translation" onClick={()=>setModal(true)}/>
             </div>
             <div className="schedule_card">
                 <div className="schedule_comands">
                     <div className="schedule_time">15:30</div>
                     <span className="schedule_comand_name">Матч за 3 место</span>
                 </div>
-                <Link href={'https://www.youtube.com/watch?v=xkgoERWc9Kw'}><Image width={10} height={10} unoptimized src="assets/translation.png" alt="Иконка трансляции" className="schedule_translation" /></Link>
+                <Image width={10} height={10} unoptimized src="assets/translation.png" alt="Иконка трансляции" className="schedule_translation" onClick={()=>setModal(true)}/>
             </div>
             <div className="schedule_card">
                 <div className="schedule_comands">
                     <div className="schedule_time">17:00</div>
                     <span className="schedule_comand_name">Финал</span>
                 </div>
-                <Link href={'https://www.youtube.com/watch?v=xkgoERWc9Kw'}><Image width={10} height={10} unoptimized src="assets/translation.png" alt="Иконка трансляции" className="schedule_translation" /></Link>
+                <Image width={10} height={10} unoptimized src="assets/translation.png" alt="Иконка трансляции" className="schedule_translation" onClick={()=>setModal(true)}/>
             </div>
 
             <div className="schedule_card">

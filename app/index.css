@@ -857,6 +857,7 @@
 .schedule_translation{
     height: 1.4vw;
     width: auto;
+    cursor: pointer;
 }
 .red{
     background: transparent;
@@ -962,10 +963,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 1vh 5vw;
+        padding: .5vh 3vw;
         clip-path: polygon(23% 0, 100% 0%, 80% 100%, 0% 100%); 
         color: #ffffff;
-        font-size: 4vw;
+        font-size: 3vw;
         font-weight: 100;
         font-family: 'Machinec';
         margin-right: 1vw;
@@ -977,7 +978,7 @@
     }
     .schedule_comand_name{
         color: #162E4E;
-        font-size: 5vw;
+        font-size: 3vw;
         font-family: 'Machinec';
         margin: 0 .5vw;
     }
@@ -1195,4 +1196,21 @@
         margin-top: 3vw;
         opacity: .9;
     }
+}
+
+
+
+/* Modal */
+
+.modal_container{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.833);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
