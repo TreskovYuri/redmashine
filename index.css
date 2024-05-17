@@ -11,6 +11,18 @@
     font-family: 'Akrobat-SemiBold';
     src: url(/assets/Akrobat/Akrobat-SemiBold.otf);
   }
+@font-face {
+    font-family: 'Akrobat-Regular';
+    src: url(/assets/Akrobat/Akrobat-Regular.otf);
+  }
+@font-face {
+    font-family: 'Akrobat-ExtraLight';
+    src: url(/assets/Akrobat/Akrobat-ExtraLight.otf);
+  }
+@font-face {
+    font-family: 'Akrobat-ExtraBold';
+    src: url(/assets/Akrobat/Akrobat-ExtraBold.otf);
+  }
 
 
 *{
@@ -18,6 +30,25 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* Настройка скроллбара */
+*::-webkit-scrollbar {
+    width: 10px;
+    background-color: #f4f2f2;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #B8342D;
+  
+  }
+  
+  *::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  background-color: #ffffff;
+  }
+
+  
 .root{
     height: 100%;
     width: 100%;
@@ -285,25 +316,267 @@
 .arena_container{
     display: flex;
     flex-direction: column;
-    padding: 5vw 20vw;
+    padding: 5vw 12vw 5vw 20vw;
 
 }
 .arena_header{
     color: #B8342D;
     font-size: 1.7vw;
+    font-weight: 100;
     font-family: 'Machinec';
+    margin-bottom: 1vw;
 }
 .arena_card_container{
     display: flex;
     position: relative;
+    height: 23vw;
+}
+.arena_blur_container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#162e4e41; /* Убедитесь, что фон полупрозрачный */
+    z-index: 1; 
+}
+.arena_photo_box{
+    clip-path: polygon(0 0, 100% 0%, 85% 100%, 0% 100%);
+    overflow: hidden;
+    position: relative;
+    width: 60%;
+
 }
 .arena_img{
-    clip-path: polygon(0 0, 100% 0%, 86% 99%, 0% 100%);
+    width: 100%;
+    height: auto;
 }
 .arena_red_box{
-    width: 100%;
+    width: 40%;
     height: 100%;
     background-color: #B8342D;
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
+    padding: 2vw 5vw;
+    clip-path: polygon(23% 0, 100% 0%, 80% 100%, 0% 100%);
+    margin-left: -5.5vw;
+    position: relative;
+}
+.arena_icon{
+    position: absolute;
+    top:1vw;
+    right:1vw;
+    width: 1.7vw;
+}
+.arena_red_box_name{
+    color: #ffffff;
+    font-size: 1.7vw;
+    font-weight: 100;
+    font-family: 'Machinec';
+}
+.arena_red_box_adress{
+    color: #ffffff;
+    font-size: .8vw;
+    font-weight: 100;
+    font-family: 'Akrobat-Regular';
+    margin-top: 0.2vw;
+}
+
+
+/* Schedule */
+.schedule_container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vw;
+    position: relative;
+}
+.schedule_header{
+    color: #B8342D;
+    font-size: 1.7vw;
+    font-weight: 100;
+    font-family: 'Machinec';
+    margin-bottom: 1vw;
+    width: 100%;
+    padding:  0 20vw;
+}
+.schedule_bacground_image{
+    width: 100%;
+    height: auto;
+    z-index: 0;
+}
+.schedule_partners_image{
+    width: 60%;
+    height: auto;
+    margin-top: 3vw;
+    margin-bottom: 5vw;
+    z-index: 0;
+}
+.schedule_text_container{
+    position: absolute;
+    top: 7vw;
+    left: 20vw;
+    width: 60vw;
+
+}
+.schedule_button_container{
+    display: flex;
+    height: 2vw;
+    z-index: 1;
+    gap: .7vw    ;
+}
+.schedule_button{
+    color: #B8342D;
+    font-size: .8vw;
+    font-weight: 100;
+    font-family: 'Akrobat-Regular';
+    border:1px solid #B8342D;
+    padding: 1vw 1.3vw;
+    border-radius: .3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.schedule_button:last-child{
+    color: white;
+    background-color: #B8342D;
+}
+.schedule_card{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1vw;
+}
+.schedule_comands{
+    display: flex;
+    align-items: center;
+}
+.schedule_time{
+    background-color: #B8342D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .3vw 1vw;
+    clip-path: polygon(23% 0, 100% 0%, 80% 100%, 0% 100%); 
+    color: #ffffff;
+    font-size: .8vw;
+    font-weight: 100;
+    font-family: 'Machinec';
+    margin-right: 1vw;
+}
+.schedule_logo{
+    height: 1vw;
+    width: auto;
+}
+.schedule_comand_name{
+    color: #162E4E;
+    font-size: .9vw;
+    font-family: 'Machinec';
+    margin: 0 .5vw;
+}
+.schedule_slesh{
+    color: #B8342D;
+    font-weight: 800;
+    font-size: 1;
+}
+.schedule_translation{
+    height: 1.4vw;
+    width: auto;
+}
+.red{
+    background: transparent;
+    color: #B8342D;
+}
+.head{
+    font-size: 1vw;
+}
+
+
+/* Footer */
+.footer_container{
+    width: 100%;
+    height: 13vw;
+    background-color: #162E4E;
+    display: flex;
+    padding: 0 20vw;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 2vw;
+}
+.footer_logo_container{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+.logo_footer_container{
+    display: flex;
+    flex-direction: column;
+    gap: .3vw;
+}
+.logo_footer{
+    color: white;
+    font-family: 'Akrobat-SemiBold';
+    font-size: .7vw;
+    width: 12vw;
+    display: flex;
+
+}
+.footer_logo{
+    height: 3vw;
+    width: auto;
+    cursor: pointer;
+}
+.logo_footer2{
+    color: white;
+    font-family: 'Akrobat-SemiBold';
+    font-size: .5vw;
+    width: 12vw; 
+}
+.footer_nav_container{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 0;
+    gap: .1vw;
+}
+.footer_nav_container a{
+    color: white;
+    font-family: 'Akrobat-ExtraBold';
+    font-weight: 100;
+    font-size: .8vw;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .3s;
+    text-decoration: none;
+}
+.footer_nav_container span:hover{
+    opacity: .8;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.footer_icon_container{
+    display: flex;
+    gap: .7vw;
+    margin-top: .3vw;
+}
+.footer_icon_container a img{
+    width: 1vw;
+    height: auto;
+}
+.footer_link_container{
+    display: flex;
+    gap: 1vw;
+}
+.footer_link_container a{
+    color: white;
+    font-family: 'Akrobat-ExtraLight';
+    font-size: .5vw;
+    text-decoration: none;
+    margin-top: 3vw;
+    opacity: .9;
 }
