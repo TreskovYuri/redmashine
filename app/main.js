@@ -10,14 +10,14 @@ const Main = () => {
         <div className="main_logo_container">
             <Image  src="assets/logo1.svg" alt="Логотип" width={10} height={10} unoptimized sizes='100'/>
             <Image  src="assets/logo2.svg" alt="Логотип" width={10} height={10} unoptimized sizes='100'/>
-            <Image  src="assets/logo3.svg" alt="Логотип" style={{width:'4vw'}} width={10} height={10} unoptimized sizes='100'/>
+            <Image  src="assets/logo3.svg" alt="Логотип"  width={10} height={10} unoptimized sizes='100'/>
             <Image  src="assets/logo4.svg" alt="Логотип" width={10} height={10} unoptimized sizes='100'/>
         </div>
         <div className="main_logo_container">
             <Image  src="assets/logo5.svg" alt="Логотип" width={10} height={10} unoptimized sizes='100'/>
-            <Image  src="assets/logo6.svg" alt="Логотип" style={{width:'4vw'}} width={10} height={10} unoptimized sizes='100'/>
-            <Image  src="assets/logo7.svg" alt="Логотип" style={{width:'4vw'}} width={10} height={10} unoptimized sizes='100'/>
-            <Image  src="assets/logo8.svg" alt="Логотип" style={{width:'4vw'}} width={10} height={10} unoptimized sizes='100'/>
+            <Image  src="assets/logo6.svg" alt="Логотип"  width={10} height={10} unoptimized sizes='100'/>
+            <Image  src="assets/logo7.svg" alt="Логотип"  width={10} height={10} unoptimized sizes='100'/>
+            <Image  src="assets/logo8.svg" alt="Логотип"  width={10} height={10} unoptimized sizes='100'/>
         </div>
     </div>
 </div>

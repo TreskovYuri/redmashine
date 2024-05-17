@@ -56,7 +56,12 @@
     flex-direction: column;
     background-color: #EDEFF1;
 }
-
+@media (max-width:768px) {
+    *::-webkit-scrollbar {
+        width: 0px;
+      }
+     
+}
 
 
 
@@ -116,6 +121,68 @@
 .nav_link:hover{
     opacity: .8;
 }
+.burgerTrigger{
+    display: none;
+}
+.x{
+    display: none;
+}
+@media (max-width:768px) {
+    .x{
+        display: block;
+        position: absolute;
+        top: 3vh;
+        right: 3vh;
+        color: white;
+        font-size: 7vw;
+        z-index: 999;
+    }
+    .burgerTrigger{
+        display: block;
+        transform: rotate(90deg);
+        letter-spacing: .3vh;
+    }
+    .header_container{
+        height: 10vh;
+        padding: 0 3vw;
+    }
+    .logo_header{
+        font-size: 2.3vw;
+        width: 40vw;
+    
+    }
+    .logo{
+        height: 5vh;
+    }
+    .logo_header2{
+        margin-top: .6vh;
+        font-size: 1.7vw;
+        width: 40vw; 
+    }
+    .nav_container{
+        display: flex;
+        gap: 3vh;
+        position: fixed;
+        top: 0;
+        left: -100vw;
+        height: 100vh;
+        width: 100vw;
+        background-color: #050c15f4;
+        z-index: 999;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition:  transform .3s ease-in-out;
+    }
+    .nav_active{
+        transform: translateX(100%);
+    }
+    .nav_link{
+        font-size: 6vw;
+    }
+
+     
+}
 
 
 /* Main */
@@ -173,6 +240,74 @@
     width: 3vw;
     height: auto;
 }
+@media (max-width:768px) {
+    .main_container{
+        margin: 7vw 0;
+        position: relative;
+        height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .main_bacground_image{
+        position: absolute;
+        height: auto;
+        width: 100%;
+        top: 0;
+        right: 0;
+        z-index: 0;
+        opacity: .6;
+        display: none;
+    }
+    .main_text_container{
+        display: flex;
+        flex-direction: column;
+        padding: 0 3vw;
+        margin: 0;
+        width: 100%;
+        align-items: center;
+    }
+    .crumbs{
+        color: black;
+        font-family: 'Akrobat-SemiBold';
+        font-size: .9vw;
+        display: flex;
+        align-items: center;
+        gap: .2vw;
+    }
+    .crumbs span{
+        color: #B8342D;
+        font-size: 4vw;
+    }
+    .main_header{
+        color: #162E4E;
+        font-family: 'Machinec';
+        font-weight: 200;
+        font-size: 9vw;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: all .3s;
+        width: 100vw;
+        text-align: center;
+        margin-bottom: 8vw;
+        margin-top: 3vh;
+    }
+    .main_logo_container{
+        display: flex;
+        width: 100vw;
+        margin-top: 2vh;
+        gap: 7vh;
+        align-items: center;
+        justify-content: center;
+    }
+    .main_logo_container:last-child{
+        gap: 5vh;
+    }
+    .main_logo_container img{
+        width: 5vh;
+        height: auto;
+    }
+}
 
 
 /* About */
@@ -211,7 +346,44 @@
     margin-top: 0.8vw;
     opacity: .5;
 }
-
+@media (max-width:768px) {
+    .about_container{
+        position: relative;
+        width: 100%;
+        height: 70vw;
+        display: flex;justify-content: end;
+        padding-right:3vw;
+    }
+    .about_bacground_image{
+        position: absolute;
+        top: 0;
+        left: -30vw;
+        height: 100%;
+        width: auto;
+        z-index: 0;
+        opacity: .6;
+    }
+    .about_text_container{
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+    }
+    .about_text_header{
+        color: #B8342D;
+        font-family: 'Machinec';
+        font-size: 6vw;
+        text-transform: uppercase;
+        z-index: 1;
+    }
+    .about_text_text{
+        color: black;
+        font-family: 'Akrobat-SemiBold';
+        font-size: 3vw;
+        z-index: 1  ;
+        margin-top: 0.8vw;
+        opacity: .5;
+    } 
+}
 /* Pleers */
 .pleers_container{
     position: relative;
@@ -266,7 +438,68 @@
 .pleers_city span{
     color: #162E4E;
 }
+@media (max-width:768px) {
+    .pleers_container{
+        position: relative;
+        width: 100%;
+        height: 90vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-left: 0vw;
+        padding-top: 3vw;
+        opacity: 1;
+    }
+    .pleers_bacground_image{
+        position: absolute;
+        top: 5vh;
+        right: -30vw;
+        height: auto;
+        width:  200%;
+        opacity: .6;
+    }
+    .pleers_header_container{
+        display: flex;
+        align-items: center;
+        gap: 5vw;
+        flex-direction: column;
+    }
+    .pleers_header{
+        color: #B8342D;
+        font-family: 'Machinec';
+        font-size: 6vw;
+        text-transform: uppercase;
+        z-index: 111;
+    }
+    .pleers_description{
+        color: black;
+        font-family: 'Akrobat-SemiBold';
+        font-size: 3vw;
+        z-index: 1  ;
+        margin-top: 0.5vw;
+        opacity: .8;
+        width: 80vw;
+        text-align: center;
+    }
+    .pleers_city_container{
+        display: flex;
+        flex-direction: column;
+        padding-left: 10vw;
+        margin-bottom: 3vh;
+    }
+    .pleers_city{
+        display: flex;
+        color: #B8342D;
+        font-size: 8vw;
+        font-family: 'Machinec';
+        z-index: 1;
+        gap: .4vw;
 
+    }
+    .pleers_city span{
+        color: #162E4E;
+    }
+}
 
 /* PleersCards */
 .pleers_cards_container{
@@ -315,7 +548,55 @@
     font-family: 'Machinec';
     margin-top: 0.3vw;
 }
-
+@media (max-width:768px) {
+    .pleers_cards_container{
+        display: flex;
+        flex-wrap: wrap;
+        padding:  4vw 0vw;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+    }
+    .pleers_card{
+        position: relative;
+        background-color: #E7E9EC;
+        height: 90vw;
+        width: 90vw;
+        margin-top: 3vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 5vw;
+    }
+    .pleers_card_red{
+        position: absolute;
+        top: 10%;
+        right: 0;
+        width: 30%;
+        height: auto;
+    }
+    .pleers_card_logo{
+        width: 20vw;
+        height:  auto;
+    }
+    .pleers_card_text_container{
+        display: flex;
+        flex-direction: column;
+    }
+    .pleers_card_header{
+        color: #B8342D;
+        font-size: 7vw;
+        font-family: 'Machinec';
+    }
+    .pleers_card_city{
+        color: #162E4E;
+        font-size: 5vw;
+        font-family: 'Machinec';
+        margin-top: 0.3vw;
+    }
+    
+}
 
 /* Arena */
 .arena_container{
@@ -388,6 +669,81 @@
     font-family: 'Akrobat-Regular';
     margin-top: 0.2vw;
 }
+@media (max-width:768px) {
+    .arena_container{
+        display: flex;
+        flex-direction: column;
+        padding: 5vw 2vw 5vw 2vw;
+        margin-top: 5vh;
+    }
+    .arena_header{
+        color: #B8342D;
+        font-size: 7vw;
+        font-weight: 100;
+        font-family: 'Machinec';
+        margin-bottom: 3vh;
+        padding-left: 5vw;
+    }
+    .arena_card_container{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        height: auto;
+        align-items: center;
+    }
+    .arena_blur_container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color:#162e4e41; /* Убедитесь, что фон полупрозрачный */
+        z-index: 1; 
+    }
+    .arena_photo_box{
+        clip-path: none;
+        overflow: hidden;
+        position: relative;
+        width: 90%;
+    
+    }
+    .arena_img{
+        width: 100%;
+        height: auto;
+    }
+    .arena_red_box{
+        width: 90%;
+        height: auto;
+        background-color: #B8342D;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 12vw 5vw 7vw 5vw;
+        clip-path:none;
+        margin-left: 0vw;
+        position: relative;
+    }
+    .arena_icon{
+        position: absolute;
+        top:3vw;
+        right:3vw;
+        width: 4vw;
+        height: auto;
+    }
+    .arena_red_box_name{
+        color: #ffffff;
+        font-size: 5vw;
+        font-weight: 100;
+        font-family: 'Machinec';
+    }
+    .arena_red_box_adress{
+        color: #ffffff;
+        font-size: 3vw;
+        font-weight: 100;
+        font-family: 'Akrobat-Regular';
+        margin-top: 0.2vw;
+    }
+}
 
 
 /* Schedule */
@@ -414,6 +770,7 @@
     width: 100%;
     height: auto;
     z-index: 0;
+    margin-bottom: 3vw;
 }
 .schedule_partners_image{
     width: 60%;
@@ -508,6 +865,154 @@
 .head{
     font-size: 1vw;
 }
+.sliderContainer{
+    width: 60vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.partners_logo{
+    width: 4vw;
+    height: auto;
+    margin: 10 5vw;
+}
+.clider_card{
+    width: 10vw;
+    height: 10vw;
+}
+@media (max-width:768px) {
+    .schedule_container{
+        width: 100%;
+        height:120vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5vh;
+        position: relative;
+    }
+    .schedule_header{
+        color: #B8342D;
+        font-size: 7vw;
+        font-weight: 100;
+        font-family: 'Machinec';
+        margin-bottom: 1vw;
+        width: 100%;
+        padding:  0 0 0 5vw;
+    }
+    .schedule_bacground_image{
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        margin-bottom: 5vh;
+        opacity: .5;
+    }
+
+    .schedule_text_container{
+        position: absolute;
+        top: 7vw;
+        left: 5vw;
+        width: 90vw;
+    
+    }
+    .schedule_button_container{
+        display: flex;
+        height: 2vw;
+        z-index: 1;
+        gap: .7vw    ;
+        margin-bottom: 10vh;
+        margin-top: 3vh;
+    }
+    .schedule_button{
+        color: #B8342D;
+        font-size: 5vw;
+        font-weight: 100;
+        font-family: 'Akrobat-Regular';
+        border:1px solid #B8342D;
+        padding: 2vh 7vw;
+        border-radius: 2vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all .3s;
+    }
+    .schedule_button:hover{
+        color: white;
+        background-color: #B8342D;
+    }
+    .schedule_button_active{
+        color: white;
+        background-color: #B8342D;
+    }
+    .schedule_button_active:hover{
+        background-color: #8d150e;
+    }
+    .schedule_card{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 3vh;
+    }
+    .schedule_comands{
+        display: flex;
+        align-items: center;
+    }
+    .schedule_time{
+        background-color: #B8342D;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1vh 5vw;
+        clip-path: polygon(23% 0, 100% 0%, 80% 100%, 0% 100%); 
+        color: #ffffff;
+        font-size: 4vw;
+        font-weight: 100;
+        font-family: 'Machinec';
+        margin-right: 1vw;
+    }
+    .schedule_logo{
+        height: 6vw;
+        width: auto;
+        display: none   ;
+    }
+    .schedule_comand_name{
+        color: #162E4E;
+        font-size: 5vw;
+        font-family: 'Machinec';
+        margin: 0 .5vw;
+    }
+    .schedule_slesh{
+        color: #B8342D;
+        font-weight: 800;
+        font-size: 1;
+    }
+    .schedule_translation{
+        height: 5vw;
+        width: auto;
+    }
+    .red{
+        background: transparent;
+        color: #B8342D;
+    }
+    .head{
+        font-size: 6vw;
+    }
+    .sliderContainer{
+        width: 95vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .partners_logo{
+        width: 25vw;
+        height: auto;
+        margin: 10 5vw;
+    }
+    .clider_card{
+        width: 40vw;
+        height: 40vw;
+    }
+}
 
 
 /* Footer */
@@ -594,4 +1099,100 @@
     text-decoration: none;
     margin-top: 3vw;
     opacity: .9;
+}
+@media (max-width:768px) {
+    .footer_container{
+        width: 100%;
+        height: auto;
+        background-color: #162E4E;
+        display: flex;
+        padding: 5vh 0vw;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .footer_logo_container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1vw;
+    }
+    .logo_footer_container{
+        display: flex;
+        flex-direction: column;
+        gap: .3vw;
+    }
+    .logo_footer{
+        color: white;
+        font-family: 'Akrobat-SemiBold';
+        font-size: 5vw;
+        width: 100vw;
+        display: flex;
+        text-align: center;
+        margin-top: 1vh;
+    
+    }
+    .footer_logo{
+        height: 40vw;
+        width: auto;
+        cursor: pointer;
+    }
+    .logo_footer2{
+        color: white;
+        font-family: 'Akrobat-SemiBold';
+        font-size: 4vw;
+        width: 100vw; 
+        text-align: center;
+        margin-top: 1vh;
+    }
+    .footer_nav_container{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 0;
+        gap: .1vw;
+        display: none;
+    }
+    .footer_nav_container a{
+        color: white;
+        font-family: 'Akrobat-ExtraBold';
+        font-weight: 100;
+        font-size: .8vw;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: all .3s;
+        text-decoration: none;
+    }
+    .footer_nav_container span:hover{
+        opacity: .8;
+    }
+    .column{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer_icon_container{
+        display: flex;
+        gap: 10vw;
+        margin-top: 3vw;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer_icon_container a img{
+        width: 10vw;
+        height: auto;
+    }
+    .footer_link_container{
+        display: flex;
+        gap: 1vw;
+        display: none;
+    }
+    .footer_link_container a{
+        color: white;
+        font-family: 'Akrobat-ExtraLight';
+        font-size: .5vw;
+        text-decoration: none;
+        margin-top: 3vw;
+        opacity: .9;
+    }
 }

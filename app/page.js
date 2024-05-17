@@ -11,6 +11,7 @@ import PleersCards from './pleersCard';
 import Arena from './arena';
 import Schedule from './schedule';
 import Footer from './footer';
+import Pleers from './pleers';
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <Header/>
         <Main/>
         <About/>
+        <Pleers/>
         <PleersCards/>
         <Arena/>
         <Schedule/>

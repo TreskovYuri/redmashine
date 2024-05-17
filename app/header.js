@@ -1,12 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-scroll';
 import Image from 'next/image'
+import {motion} from 'framer-motion'
 
 const Header = () => {
+    const [modal, setModal] = useState(false)
   return (
     <div className="header_container">
     <div className="logo_container">
-        <Image  src="assets/logo.svg" alt="Логотип сайта" className="logo" width={10} height={10} unoptimized/>
+        <Link to={'header'} spy={true} smooth={true} offset={-50} duration={1500}><Image  src="assets/logo.svg" alt="Логотип сайта" className="logo" width={10} height={10} unoptimized/></Link>
         <div className="logo_header_container">
             <h2 className="logo_header">КУБОК "ЮНИСОН" СРЕДИ ДЕТСКИХ ХОККЕЙНЫХ КОМАНД 2014 Г.</h2>
             <div className="logo_header2_container">
@@ -15,14 +17,17 @@ const Header = () => {
             </div>
         </div>
     </div>
-    <div className="nav_container">
-        <Link to={'about'} spy={true} smooth={true} offset={-50} duration={1500} className='nav_link'>о турнире</Link>
-        <Link to={'pleers'} spy={true} smooth={true} offset={0} duration={1500} className='nav_link'>участники</Link>
-        <Link to={'arena'} spy={true} smooth={true} offset={0} duration={1500} className='nav_link'>арена</Link>
-        <Link to={'schedule'} spy={true} smooth={true} offset={0} duration={1500} className='nav_link'>продвижение</Link>
-        <Link to={'schedule'} spy={true} smooth={true} offset={0} duration={1500} className='nav_link'>расписание</Link>
-        <Link to={'schedule'} spy={true} smooth={true} offset={0} duration={1500} className='nav_link'>турнирная таблица</Link>
-        <Link to={'guest'} spy={true} smooth={true} offset={0} duration={1500} className='nav_link'>гости турнира</Link>
+    <span className='burgerTrigger' onClick={()=>setModal(true)}>|||</span>
+
+    <div className={modal? `${"nav_container"} ${'nav_active'}`:"nav_container"} id='header'>
+    <motion.span initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay:.4}} className='x' onClick={()=>setModal(false)}>x</motion.span>
+        <Link to={'about'} spy={true} smooth={true} offset={-50} duration={1500} className='nav_link' onClick={()=>setModal(false)}>о турнире</Link>
+        <Link to={'pleers'} spy={true} smooth={true} offset={0} duration={1500} className='nav_link' onClick={()=>setModal(false)}>участники</Link>
+        <Link to={'arena'} spy={true} smooth={true} offset={0} duration={1500} className='nav_link' onClick={()=>setModal(false)}>арена</Link>
+        <Link to={'schedule'} spy={true} smooth={true} offset={0} duration={1500} className='nav_link' onClick={()=>setModal(false)}>продвижение</Link>
+        <Link to={'schedule'} spy={true} smooth={true} offset={0} duration={1500} className='nav_link' onClick={()=>setModal(false)}>расписание</Link>
+        <Link to={'schedule'} spy={true} smooth={true} offset={0} duration={1500} className='nav_link' onClick={()=>setModal(false)}>турнирная таблица</Link>
+        <Link to={'guest'} spy={true} smooth={true} offset={0} duration={1500} className='nav_link' onClick={()=>setModal(false)}>гости турнира</Link>
     </div>
 </div>
   )
