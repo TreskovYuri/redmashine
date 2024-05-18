@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <div className="header_container">
     <div className="logo_container">
-        <Link to={'header'} spy={true} smooth={true} offset={-50} duration={1500}><Image  src="assets/logo.svg" alt="Логотип сайта" className="logo" width={10} height={10} unoptimized/></Link>
+        <Link to={'header'} spy={true} smooth={true} offset={-50} duration={1500}><Image  src="assets/logo.svg" alt="Логотип сайта" className="logo" width={10} height={10} unoptimized sizes='100'/></Link>
         <div className="logo_header_container">
             <h2 className="logo_header">КУБОК "ЮНИСОН" СРЕДИ ДЕТСКИХ ХОККЕЙНЫХ КОМАНД 2014 Г.</h2>
             <div className="logo_header2_container">

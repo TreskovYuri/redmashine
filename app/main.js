@@ -9,7 +9,7 @@ const Main = () => {
         <div className="crumbs"><span>18-19 МАЯ </span> / <span> СК «ХОККЕЙНЫЙ ГОРОД КРАСНОГОРСК»</span></div>
         <h1 className="main_header">КУБОК <span>ЮНИСОН</span></h1>
         <div className="main_logo_container">
-            <Link href={'https://academy.ska.ru/schools/ska-strelna/'}><Image  src="assets/logo1.svg" alt="Логотип" width={10} height={10} unoptimized sizes='100' style={{zIndex:'99'}}/></Link>
+            <Link href={'https://strelna.ska.ru/'}><Image  src="assets/logo1.svg" alt="Логотип" width={10} height={10} unoptimized sizes='100' style={{zIndex:'99'}}/></Link>
             <Link href={'https://akbars.academy/'}><Image  src="assets/logo2.svg" alt="Логотип" width={10} height={10} unoptimized sizes='100' style={{zIndex:'99'}}/></Link>
             <Link href={'https://redmachinejunior.ru/'}><Image  src="assets/logo3.svg" alt="Логотип"  width={10} height={10} unoptimized sizes='100' style={{zIndex:'99'}}/></Link>
             <Link href={'https://school.dynamo.ru/'}><Image  src="assets/logo4.svg" alt="Логотип" width={10} height={10} unoptimized sizes='100' style={{zIndex:'99'}}/></Link>

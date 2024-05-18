@@ -4,7 +4,7 @@ import Link from 'next/link'
 const PleersCards = () => {
     return (
         <div className="pleers_cards_container" id='guest'>
-            <Link href={'https://army.ska.ru/'}>
+            <Link href={'https://strelna.ska.ru/'}>
                 <div className="pleers_card">
                     <Image width={10} height={10} unoptimized src="assets/pleers_card_red.svg" alt="" className="pleers_card_red" sizes='100' />
                     <Image width={10} height={10} unoptimized src="assets/logo1.svg" alt="Логотип команды" className="pleers_card_logo" sizes='100' />

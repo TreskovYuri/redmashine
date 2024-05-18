@@ -24,22 +24,22 @@ const Guests = () => {
     {
         "img":<Image src='assets/guest4.png' unoptimized sizes='100' width={200} height={200} className={css.guest} />,
         "name":"Хоккей Стигг",
-        "team":"«Ледовая Дружина»"
-    },
-    {
-        "img":<Image src='assets/guest5.png' unoptimized sizes='100' width={200} height={200} className={css.guest} />,
-        "name":"Игрок",
         "team":""
     },
     {
+        "img":<Image src='assets/guest5.png' unoptimized sizes='100' width={200} height={200} className={css.guest} />,
+        "name":"Илья Винокуров",
+        "team":"IVhockey"
+    },
+    {
         "img":<Image src='assets/guest6.png' unoptimized sizes='100' width={200} height={200} className={css.guest} />,
-        "name":"Игрок",
+        "name":"Лысенков Павел",
         "team":""
     },
     {
         "img":<Image src='assets/guest7.png' unoptimized sizes='100' width={200} height={200} className={css.guest} />,
-        "name":"Игрок",
-        "team":""
+        "name":"Серебрков Никита",
+        "team":"Хоккеист ХК «СКА»"
     }]
     return (
         <div className={css.container} id='guests'>
