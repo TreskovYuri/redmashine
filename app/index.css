@@ -196,6 +196,8 @@
     width: auto;
     top: 0;
     right: 5%;
+    z-index: 0;
+    user-select: none;
 }
 .main_text_container{
     display: flex;
@@ -232,6 +234,7 @@
     width: 20vw;
     margin-top: 1vw;
     gap: 4vw;
+    z-index: 99;
 }
 .main_logo_container:last-child{
     gap: 5vw;
@@ -239,6 +242,12 @@
 .main_logo_container img{
     width: 3vw;
     height: auto;
+    transition: all.3s;
+    z-index: 9;
+    
+}
+.main_logo_container img:hover{
+    transform: scale(103%);
 }
 @media (max-width:768px) {
     .main_container{
@@ -246,18 +255,16 @@
         position: relative;
         height: 70vh;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        align-items: flex-start;
+        justify-content: flex-start;
     }
     .main_bacground_image{
         position: absolute;
         height: auto;
-        width: 100%;
-        top: 0;
-        right: 0;
-        z-index: 0;
-        opacity: .6;
-        display: none;
+        width: 140%;
+        top: 20vh;
+        right: -55vw;
+        z-index: 1;
     }
     .main_text_container{
         display: flex;
@@ -265,7 +272,7 @@
         padding: 0 3vw;
         margin: 0;
         width: 100%;
-        align-items: center;
+        align-items: flex-start;
     }
     .crumbs{
         color: black;
@@ -287,25 +294,28 @@
         text-transform: uppercase;
         cursor: pointer;
         transition: all .3s;
-        width: 100vw;
-        text-align: center;
+        width: 90vw;
         margin-bottom: 8vw;
         margin-top: 3vh;
     }
     .main_logo_container{
         display: flex;
-        width: 100vw;
-        margin-top: 2vh;
-        gap: 7vh;
+        flex-wrap: wrap;
+        width: 50vw;
+        margin-top: 4vh;
+        gap: 5vh;
         align-items: center;
         justify-content: center;
     }
     .main_logo_container:last-child{
         gap: 5vh;
+        padding: 0 4vw;
     }
     .main_logo_container img{
         width: 5vh;
         height: auto;
+        z-index: 99;
+        margin: 0 2vw;
     }
 }
 
@@ -560,9 +570,9 @@
     .pleers_card{
         position: relative;
         background-color: #E7E9EC;
-        height: 90vw;
-        width: 90vw;
-        margin-top: 3vw;
+        height: 70vw;
+        width: 70vw;
+        margin-top: 3vh;
         display: flex;
         flex-direction: column;
         justify-content: space-between;

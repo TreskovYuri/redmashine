@@ -21,7 +21,7 @@ const PleersCards = () => {
             </div>
             <div className="pleers_card">
                 <Image width={10} height={10} unoptimized src="assets/pleers_card_red.svg" alt="" className="pleers_card_red" sizes='100'/>
-                <Image width={10} height={10} unoptimized src="assets/logo3.svg" alt="Логотип команды" className="pleers_card_logo"  sizes='100'/>
+                <Image width={10} height={10} unoptimized src="assets/logo7.svg" alt="Логотип команды" className="pleers_card_logo"  sizes='100'/>
                 <div className="pleers_card_text_container">
                     <h2 className="pleers_card_header">Лада</h2>
                     <span className="pleers_card_city">тольятти</span>
@@ -29,7 +29,7 @@ const PleersCards = () => {
             </div>
             <div className="pleers_card">
                 <Image width={10} height={10} unoptimized src="assets/pleers_card_red.svg" alt="" className="pleers_card_red" sizes='100'/>
-                <Image width={10} height={10} unoptimized src="assets/logo4.svg" alt="Логотип команды" className="pleers_card_logo" sizes='100'/>
+                <Image width={10} height={10} unoptimized src="assets/logo5.svg" alt="Логотип команды" className="pleers_card_logo" sizes='100'/>
                 <div className="pleers_card_text_container">
                     <h2 className="pleers_card_header">Армия ска</h2>
                     <span className="pleers_card_city">Санкт-петербург</span>
@@ -37,7 +37,7 @@ const PleersCards = () => {
             </div>
             <div className="pleers_card">
                 <Image width={10} height={10} unoptimized src="assets/pleers_card_red.svg" alt="" className="pleers_card_red" sizes='100'/>
-                <Image width={10} height={10} unoptimized src="assets/logo5.svg" alt="Логотип команды" className="pleers_card_logo" sizes='100'/>
+                <Image width={10} height={10} unoptimized src="assets/logo3.svg" alt="Логотип команды" className="pleers_card_logo" sizes='100'/>
                 <div className="pleers_card_text_container">
                     <h2 className="pleers_card_header">Красная машина юниор</h2>
                     <span className="pleers_card_city">Москва</span>
@@ -45,7 +45,7 @@ const PleersCards = () => {
             </div>
             <div className="pleers_card">
                 <Image width={10} height={10} unoptimized src="assets/pleers_card_red.svg" alt="" className="pleers_card_red" sizes='100'/>
-                <Image width={10} height={10} unoptimized src="assets/logo6.svg" alt="Логотип команды" className="pleers_card_logo"  sizes='100'/>
+                <Image width={10} height={10} unoptimized src="assets/logo4.svg" alt="Логотип команды" className="pleers_card_logo"  sizes='100'/>
                 <div className="pleers_card_text_container">
                     <h2 className="pleers_card_header">динамо</h2>
                     <span className="pleers_card_city">Москва</span>
@@ -53,7 +53,7 @@ const PleersCards = () => {
             </div>
             <div className="pleers_card">
                 <Image width={10} height={10} unoptimized src="assets/pleers_card_red.svg" alt="" className="pleers_card_red" sizes='100'/>
-                <Image width={10} height={10} unoptimized src="assets/logo7.svg" alt="Логотип команды" className="pleers_card_logo"  sizes='100'/>
+                <Image width={10} height={10} unoptimized src="assets/logo6.svg" alt="Логотип команды" className="pleers_card_logo"  sizes='100'/>
                 <div className="pleers_card_text_container">
                     <h2 className="pleers_card_header">Школа им. руслана салея</h2>
                     <span className="pleers_card_city">минск</span>
