@@ -24,10 +24,10 @@ const Header = () => {
         <Link to={'about'} spy={true} smooth={true} offset={-50} duration={1500} className='nav_link' onClick={()=>setModal(false)}>о турнире</Link>
         <Link to={'pleers'} spy={true} smooth={true} offset={0} duration={1500} className='nav_link' onClick={()=>setModal(false)}>участники</Link>
         <Link to={'arena'} spy={true} smooth={true} offset={0} duration={1500} className='nav_link' onClick={()=>setModal(false)}>арена</Link>
-        <Link to={'schedule'} spy={true} smooth={true} offset={0} duration={1500} className='nav_link' onClick={()=>setModal(false)}>продвижение</Link>
+        <Link to={'header'} spy={true} smooth={true} offset={0} duration={1500} className='nav_link' onClick={()=>setModal(false)}>продвижение</Link>
         <Link to={'schedule'} spy={true} smooth={true} offset={0} duration={1500} className='nav_link' onClick={()=>setModal(false)}>расписание</Link>
-        <Link to={'schedule'} spy={true} smooth={true} offset={0} duration={1500} className='nav_link' onClick={()=>setModal(false)}>турнирная таблица</Link>
-        <Link to={'guest'} spy={true} smooth={true} offset={0} duration={1500} className='nav_link' onClick={()=>setModal(false)}>гости турнира</Link>
+        <Link to={'table'} spy={true} smooth={true} offset={0} duration={1500} className='nav_link' onClick={()=>setModal(false)}>турнирная таблица</Link>
+        <Link to={'guests'} spy={true} smooth={true} offset={0} duration={1500} className='nav_link' onClick={()=>setModal(false)}>гости турнира</Link>
     </div>
 </div>
   )

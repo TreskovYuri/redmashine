@@ -3,7 +3,7 @@ import Image from 'next/image'
 const About = () => {
     return (
         <div className="about_container" id='about'>
-            <Image width={10} height={10} unoptimized src="/assets/about_bacground.png" alt="Изображение хоккеиста" className="about_bacground_image" />
+            <Image width={10} height={10} unoptimized src="/assets/about_bacground1.png" alt="Изображение хоккеиста" className="about_bacground_image" />
             <div className="about_text_container">
                 <h2 className="about_text_header">[о турнире]</h2>
                 <span className="about_text_text">18 и 19 мая в «Хоккейном городе Красногорск» по адресу: Красногорск, ул.

@@ -4,28 +4,53 @@ import { motion } from 'framer-motion'
 import Link from 'next/link'
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
+import Guests from './guests';
+import Table from './table';
 
 const Schedule = ({setModal}) => {
     const [page, setPage] = useState(false)
     const list =[
-        <Image src={'assets/partners_logo1.svg'} unoptimized width={150} height={150} sizes='100' className='partners_logo'/>,
-        <Image src={'assets/partners_logo2.svg'} unoptimized width={150} height={150} sizes='100' className='partners_logo'/>,
-        <Image src={'assets/partners_logo3.svg'} unoptimized width={150} height={150} sizes='100' className='partners_logo'/>,
-        <Image src={'assets/partners_logo4.svg'} unoptimized width={150} height={150} sizes='100' className='partners_logo'/>,
-        <Image src={'assets/partners_logo5.svg'} unoptimized width={150} height={150} sizes='100' className='partners_logo'/>,
-        <Image src={'assets/partners_logo6.svg'} unoptimized width={150} height={150} sizes='100' className='partners_logo'/>,
-        <Image src={'assets/partners_logo7.svg'} unoptimized width={150} height={150} sizes='100' className='partners_logo'/>,
+        {
+            "img":<Image src={'assets/partners_logo1.svg'} unoptimized width={150} height={150} sizes='100' className='partners_logo'/>,
+            "link":"https://fhr.ru"
+        },
+        {
+            "img":<Image src={'assets/partners_logo2.svg'} unoptimized width={150} height={150} sizes='100' className='partners_logo'/>,
+            "link":"https://redmachine.ru"
+        },
+        {
+            "img":<Image src={'assets/partners_logo3.svg'} unoptimized width={150} height={150} sizes='100' className='partners_logo'/>,
+            "link":"https://redmachinejunior.ru/"
+        },
+        {
+            "img":<Image src={'assets/partners_logo4.svg'} unoptimized width={150} height={150} sizes='100' className='partners_logo'/>,
+            "link":"https://academy.ska.ru"
+        },
+        {
+            "img":<Image src={'assets/partners_logo5.svg'} unoptimized width={150} height={150} sizes='100' className='partners_logo'/>,
+            "link":"https://www.gazprom.ru"
+        },
+        {
+            "img":<Image src={'assets/partners_logo6.svg'} unoptimized width={150} height={150} sizes='100' className='partners_logo'/>,
+            "link":"https://unisoncup.hcunison.ru"
+        },
+        {
+            "img":<Image src={'assets/partners_logo7.svg'} unoptimized width={150} height={150} sizes='100' className='partners_logo'/>,
+            "link":""
+        },
     ]
 
     return (
         <div className="schedule_container" id='schedule'>
             <h2 className="schedule_header">[Расписание]</h2>
             <Image width={10} height={10} unoptimized src="assets/schedule_bacground.png" alt="Фоновое изображение" className="schedule_bacground_image" />
+            <Table/>
+            <Guests/>
             <div className='sliderContainer'>
                 <AliceCarousel autoPlay infinite touchMoveDefaultEvents autoWidth mouseTracking disableButtonsControls disableDotsControls paddingLeft={3} animationDuration={7000} autoPlayInterval={10} autoPlayStrategy='default' animationEasingFunction='linear' >
                     {
                         list.map(e => (
-                            <div key={e} className='clider_card'>{e}</div>
+                            <div  key={e} className='clider_card'><Link href={e.link}>{e.img}</Link></div>
                         ))
                     }
                 </AliceCarousel>
@@ -161,7 +186,7 @@ const Page2 = ({setModal}) => {
                     <span className="schedule_comand_name">Ска стрельна</span>
                     <Image width={10} height={10} unoptimized src="assets/logo1.svg" alt="Логотип команды" className="schedule_logo" />
                 </div>
-                <Link href={'https://www.youtube.com/watch?v=xkgoERWc9Kw'}><Image width={10} height={10} unoptimized src="assets/translation.png" alt="Иконка трансляции" className="schedule_translation" onClick={()=>setModal(true)}/></Link>
+                <Image width={10} height={10} unoptimized src="assets/translation.png" alt="Иконка трансляции" className="schedule_translation" onClick={()=>setModal(true)}/>
             </div>
             <div className="schedule_card">
                 <div className="schedule_comands">
@@ -188,7 +213,7 @@ const Page2 = ({setModal}) => {
             </div>
             <div className="schedule_card">
                 <div className="schedule_comands">
-                    <div className="schedule_time">12:20</div>
+                    <div className="schedule_time">12:30</div>
                     <Image width={10} height={10} unoptimized src="assets/logo5.svg" alt="Логотип команды" className="schedule_logo" />
                     <span className="schedule_comand_name">Армия ска</span>
                     <span className="schedule_slesh">/</span>
@@ -217,14 +242,14 @@ const Page2 = ({setModal}) => {
             </div>
             <div className="schedule_card">
                 <div className="schedule_comands">
-                    <div className="schedule_time">15:30</div>
+                    <div className="schedule_time">17:00</div>
                     <span className="schedule_comand_name">Матч за 3 место</span>
                 </div>
                 <Image width={10} height={10} unoptimized src="assets/translation.png" alt="Иконка трансляции" className="schedule_translation" onClick={()=>setModal(true)}/>
             </div>
             <div className="schedule_card">
                 <div className="schedule_comands">
-                    <div className="schedule_time">17:00</div>
+                    <div className="schedule_time">18:30</div>
                     <span className="schedule_comand_name">Финал</span>
                 </div>
                 <Image width={10} height={10} unoptimized src="assets/translation.png" alt="Иконка трансляции" className="schedule_translation" onClick={()=>setModal(true)}/>

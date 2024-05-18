@@ -7,7 +7,7 @@ const Main = () => {
 
     <div className="main_text_container">
         <div className="crumbs"><span>18-19 МАЯ </span> / <span> СК «ХОККЕЙНЫЙ ГОРОД КРАСНОГОРСК»</span></div>
-        <h1 className="main_header">КУБОК "ЮНИСОН" СРЕДИ ДЕТСКИХ ХОККЕЙНЫХ КОМАНД 2014 Г.</h1>
+        <h1 className="main_header">КУБОК <span>ЮНИСОН</span></h1>
         <div className="main_logo_container">
             <Link href={'https://academy.ska.ru/schools/ska-strelna/'}><Image  src="assets/logo1.svg" alt="Логотип" width={10} height={10} unoptimized sizes='100' style={{zIndex:'99'}}/></Link>
             <Link href={'https://akbars.academy/'}><Image  src="assets/logo2.svg" alt="Логотип" width={10} height={10} unoptimized sizes='100' style={{zIndex:'99'}}/></Link>

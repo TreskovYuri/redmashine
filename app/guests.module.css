@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'Machinec';
+    src: url(/assets/MachineC/machinec.otf);
+  }
+  @font-face {
+    font-family: 'Akrobat-ExtraLight';
+    src: url(/assets/Akrobat/Akrobat-ExtraLight.otf);
+  }
+
+
+.container{
+    width: 100%;
+    height: 30vw;
+    background-image: url('/assets/guests_bacground.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin-bottom: 10vh;
+    display: flex;
+    padding: 0vw 15vw 0 0vw;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2vw;
+    position: relative;
+}
+.header{
+    height:  12vw;
+    width: auto;
+    margin-bottom: 14vh;
+    z-index: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 6vw;
+    left: 15vw;
+}
+.guest{
+    height: 18vw;
+    width: auto;
+}
+.guest:first-child{
+    margin-right: 22vw;
+}
+.sliderCard{
+    width: 15vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+.cardHeader{
+    font-size: 1.5vw;
+    font-weight: 100;
+    font-family: 'Machinec';
+    margin-top: 0.3vw;
+    color: white;
+}
+.cardHeader1{
+    font-size: .8vw;
+    font-family: 'Akrobat-ExtraLight';
+    opacity: .6;
+    color: white;
+}
+.slider{
+    z-index: 11;
+    width: 50%;
+}
+
+@media (max-width:768px) {
+    .container{
+        width: 100%;
+        height: 80vh;
+        background-image: url('/assets/guests_bacground.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        margin-bottom: 10vh;
+        display: flex;
+        padding: 0vw 3vw 5vh 0vw;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 2vw;
+        position: relative;
+        margin-top: 10vh;
+    }
+    .header{
+        height:  auto;
+        width: 60%;
+        margin-bottom: 14vh;
+        z-index: 0;
+        pointer-events: none;
+        position: absolute;
+        top: 6vh;
+        left: 20%;
+    }
+    .guest{
+        height: auto;
+        width: 50vw;
+    }
+    .guest:first-child{
+        margin-right: 22vw;
+    }
+    .sliderCard{
+        width: 60vw;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .cardHeader{
+        font-size: 4vw;
+        font-weight: 100;
+        font-family: 'Machinec';
+        margin-top: 0.3vw;
+        color: white;
+    }
+    .cardHeader1{
+        font-size: 2.5vw;
+        font-family: 'Akrobat-ExtraLight';
+        opacity: .6;
+        color: white;
+    }
+    .slider{
+        z-index: 11;
+        width: 95%;
+        margin-top: 25vh;
+    }
+}
