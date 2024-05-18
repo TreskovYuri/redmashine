@@ -17,7 +17,7 @@ const Main = () => {
         <div className="main_logo_container">
         <Link href={'https://army.ska.ru/'}><Image  src="assets/logo5.svg" alt="Логотип" width={10} height={10} unoptimized sizes='100' style={{zIndex:'99'}}/></Link>
         <Link href={'https://saleischool.by/'}><Image  src="assets/logo6.svg" alt="Логотип"  width={10} height={10} unoptimized sizes='100' style={{zIndex:'99'}}/></Link>
-        <Link href={'https://hctorpedo.ru/school/'}><Image  src="assets/logo7.svg" alt="Логотип"  width={10} height={10} unoptimized sizes='100' style={{zIndex:'99'}}/></Link>
+        <Link href={'https://hclada.ru/youth_sports_school/history/'}><Image  src="assets/logo7.svg" alt="Логотип"  width={10} height={10} unoptimized sizes='100' style={{zIndex:'99'}}/></Link>
         <Link href={'http://school.metallurg.ru/'}><Image  src="assets/logo8.svg" alt="Логотип"  width={10} height={10} unoptimized sizes='100' style={{zIndex:'99'}}/></Link>
         </div>
         <Image src="/assets/main_bacground.png" alt="Изображение играющих хоккеистов" className="main_bacground_image" width={10} height={10} unoptimized/>

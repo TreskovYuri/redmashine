@@ -26,7 +26,7 @@ const PleersCards = () => {
                 </div>
             </Link>
 
-            <Link href={'https://hctorpedo.ru/school/'}>
+            <Link href={'https://hclada.ru/youth_sports_school/history/'}>
                 <div className="pleers_card">
                     <Image width={10} height={10} unoptimized src="assets/pleers_card_red.svg" alt="" className="pleers_card_red" sizes='100' />
                     <Image width={10} height={10} unoptimized src="assets/logo7.svg" alt="Логотип команды" className="pleers_card_logo" sizes='100' />
