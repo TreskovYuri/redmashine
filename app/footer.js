@@ -17,12 +17,12 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="footer_icon_container">
-                    <a href="https://vk.com/redmachine_junior"><Image width={10} height={10} unoptimized src="assets/vk.svg" alt="vk" /></a>
-                    <a href="https://t.me/redmachinejunior"><Image width={10} height={10} unoptimized src="assets/viber.svg" alt="viber" /></a>
+                    <a target='blank' href="https://vk.com/redmachine_junior"><Image width={10} height={10} unoptimized src="assets/vk.svg" alt="vk" /></a>
+                    <a target='blank' href="https://t.me/redmachinejunior"><Image width={10} height={10} unoptimized src="assets/viber.svg" alt="viber" /></a>
                 </div>
                 <div className="footer_link_container">
                     <a >2023 © Официальный сайт «Красная Машина Юниор»</a>
-                    <a href="https://redmachinejunior.ru/privacy_policy/">Политика конфиденциальности</a>
+                    <a target='blank' href="https://redmachinejunior.ru/privacy_policy/">Политика конфиденциальности</a>
                 </div>
             </div>
 
